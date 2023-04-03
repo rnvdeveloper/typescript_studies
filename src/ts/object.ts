@@ -1,81 +1,82 @@
+export{}
 // Object represents values that are not primitive, best way to group data, can be anonymous or named.
 
 // object type
-const personObj = {
+const person = {
   firstname: "Rnv",
   lastname: "Developer",
   age: 41,
   function: "Developer",
 };
-console.log(personObj);
+console.log(person);
 
 // Object as a function parameter (can be anonymous)
-function onboardingObj1(empolyee: { name: string }) {
+function onboarding1(empolyee: { name: string }) {
   return `Welcome ${empolyee.name}`;
 }
-console.log(onboardingObj1({ name: "Rnv" }));
+console.log(onboarding1({ name: "Rnv" }));
 
-interface IPersonObj1 {
+interface IPerson1 {
   name: string;
   function: string;
 }
 // Object as a function parameter through interface (named object)
-function onboardingObj2(employee: IPersonObj1) {
+function onboarding2(employee: IPerson1) {
   return `Welcome ${employee.name}! Here you will be a ${employee.function}!`;
 }
-console.log(onboardingObj2({ name: "Rnv Developer", function: "Developer" }));
+console.log(onboarding2({ name: "Rnv Developer", function: "Developer" }));
 
-type IPersonObj2 = {
+type IPerson2 = {
   name: string;
   function: string;
   language: string;
 };
 
 // Object as a type alias
-function onboardingObj3(employee: IPersonObj2) {
+function onboarding3(employee: IPerson2) {
   return `Welcome ${employee.name}! Here you will be a ${employee.function} and you will work with ${employee.language}!`;
 }
 console.log(
-  onboardingObj3({
+  onboarding3({
     name: "Rnv Developer",
     function: "Developer",
     language: "Javascript/Typescript",
   })
 );
 
-interface IPersonObj3 {
+interface IPerson3 {
   name: string;
   function: string;
   language: string;
   email?: string;
 }
 // Object optional chainning
-function onboardingObj4(employee: IPersonObj3) {
+function onboarding4(employee: IPerson3) {
   return `Welcome ${employee.name}!
    Here you will be a ${employee.function} and you will work with ${employee.language}.`;
 }
 console.log(
-  onboardingObj4({
+  onboarding4({
     name: "Rnv Developer",
     function: "Developer",
     language: "Javascript/Typescript",
   })
 );
 
-interface IPersonObj4 {
+interface IPerson4 {
   name: string;
   function: string;
   language: string;
   readonly email: string;
 }
 // Object readonly property (Prevend developer to modify a property of the object)
-function onboardingObj5(employee: IPersonObj4) {
+function onboarding5(employee: IPerson4) {
   return `Welcome ${employee.name}!
     Here you will be a ${employee.function} and you will work with ${employee.language}.
     Your company e-mail will be ${employee.email}.`;
 }
 console.log(
-  onboardingObj5({
+  onboarding5({
     name: "Rnv Developer",
     function: "Developer",
     language: "Javascript/Typescript",
@@ -135,9 +136,9 @@ const adminObj: AdminObj = {
   admin: true,
 };
 
-function accessSystemObj<T>(anyRole: T): T {
+function accessSystem<T>(anyRole: T): T {
   return anyRole;
 }
 
-console.log(accessSystemObj(userObj));
-console.log(accessSystemObj(adminObj));
+console.log(accessSystem(userObj));
+console.log(accessSystem(adminObj));

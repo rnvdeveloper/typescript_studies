@@ -1,13 +1,14 @@
+export{}
 // Void variables accepts undefined and null, however, to accept the null values you need to add the strictNullChecks as false on tsconfig.
 
-function firstVoidFn(): void {
+function voidFn1(): void {
   console.log("Hello Frontender!");
 }
-firstVoidFn();
+voidFn1();
 
 // Although it is not annoted, this is a void function according to its lack of data return
-const secondVoidFn = () => console.log("Hello Backender!");
-secondVoidFn();
+const voidFn2 = () => console.log("Hello Backender!");
+voidFn2();
 
 // These are not void functions as they return a number.
 function firstSum() {

@@ -1,3 +1,4 @@
+export{}
 const id: number = 10;
 const company: string = "rnv";
 const isLogged: boolean = false;

@@ -1,3 +1,4 @@
+export{}
 // This has a similar use to types, however is declared in a different way, call interface name with PascalCase and do not use the = sign.
 // Does not accept primitive values or unions
 

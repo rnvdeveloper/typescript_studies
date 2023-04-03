@@ -1,3 +1,4 @@
+export{}
 function getArray<T>(items: T[]): T[] {
   return new Array().concat(items);
 }
@@ -26,9 +27,9 @@ const adminGen: AdminGen = {
   admin: true,
 };
 
-function accessSystem1<T>(anyRole: T): T {
+function accessSystem<T>(anyRole: T): T {
   return anyRole;
 }
 
-console.log(accessSystem1(userGen));
-console.log(accessSystem1(adminGen));
+console.log(accessSystem(userGen));
+console.log(accessSystem(adminGen));
