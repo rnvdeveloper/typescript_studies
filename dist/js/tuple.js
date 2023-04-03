@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // Accepts only de type values defined for each position
 // Basic declaration of tuples
 let person1 = [10, "rnvdeveloper", true];

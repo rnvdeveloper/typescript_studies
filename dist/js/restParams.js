@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // Example 01
 function sumNumbers(...numbers) {
     let total = 0;

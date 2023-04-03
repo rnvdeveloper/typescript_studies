@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // Null represents an intentional value abscence, it fills a space of variable that is expected to be undefined. Once defined as null it will only accept this value.
 let varNull = null;
 //varNull = 1

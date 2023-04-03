@@ -1,6 +1,5 @@
 "use strict";
-// This has a similar use to types, however is declared in a different way, call interface name with PascalCase and do not use the = sign.
-// Does not accept primitive values or unions
+Object.defineProperty(exports, "__esModule", { value: true });
 const user1 = {
     id: 1,
     name: "rnv",

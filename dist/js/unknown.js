@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // unknown accepts any type such as number, boolean, arrays, strings and etc.
 // In this example we are not changing the type but only inserting values to the variableValue
 let variableValue;

@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const id = 10;
 const company = "rnv";
 const isLogged = false;

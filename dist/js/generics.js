@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function getArray(items) {
     return new Array().concat(items);
 }
@@ -14,8 +15,8 @@ const adminGen = {
     email: "rnv@rnvdeveloper",
     admin: true,
 };
-function accessSystem1(anyRole) {
+function accessSystem(anyRole) {
     return anyRole;
 }
-console.log(accessSystem1(userGen));
-console.log(accessSystem1(adminGen));
+console.log(accessSystem(userGen));
+console.log(accessSystem(adminGen));
