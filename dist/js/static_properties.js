@@ -1,35 +1,35 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 // Example 01 - Static Properties
-class Employees {
+class Employee {
     constructor(firstName, lastName, title) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.title = title;
-        Employees.hirings++;
+        Employee.hirings++;
     }
 }
-Employees.hirings = 0;
-const employee1 = new Employees("RNV", "Developer", "Frontend Developer");
-const employee2 = new Employees("Rato", "Marrato", "Backend Developer");
-const employee3 = new Employees("Employee", "da Silva", "Tech Lead");
-console.log(Employees.hirings);
+Employee.hirings = 0;
+const employee1 = new Employee("RNV", "Developer", "Frontend Developer");
+const employee2 = new Employee("Rato", "Marrato", "Backend Developer");
+const employee3 = new Employee("Employee", "da Silva", "Tech Lead");
+console.log(Employee.hirings);
 // Example 02 - Static Methods
-class Employees2 {
+class Employee2 {
     constructor(firstName, lastName, title) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.title = title;
-        Employees2.hirings++;
+        Employee2.hirings++;
     }
     static returnHirings() {
-        return Employees2.hirings;
+        return Employee2.hirings;
     }
 }
-Employees2.hirings = 0;
-const employee4 = new Employees2("RNV", "Developer", "Frontend Developer");
-const employee5 = new Employees2("Rato", "Marrato", "Backend Developer");
-console.log(Employees2.returnHirings());
+Employee2.hirings = 0;
+const employee4 = new Employee2("RNV", "Developer", "Frontend Developer");
+const employee5 = new Employee2("Rato", "Marrato", "Backend Developer");
+console.log(Employee2.returnHirings());
 //type Breed2 = ["Spitz", "Buldog", "Pug", "Yorkshire", "Poodle"];
 class Dog {
     constructor(name, age, breeds) {

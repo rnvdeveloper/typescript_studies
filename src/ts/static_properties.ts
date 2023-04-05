@@ -1,6 +1,6 @@
 export {};
 // Example 01 - Static Properties
-class Employees {
+class Employee {
     static hirings = 0;
 
     constructor(
@@ -8,18 +8,18 @@ class Employees {
         private lastName: string,
         private title: string
     ) {
-        Employees.hirings++;
+        Employee.hirings++;
     }
 }
 
-const employee1 = new Employees("RNV", "Developer", "Frontend Developer");
-const employee2 = new Employees("Rato", "Marrato", "Backend Developer");
-const employee3 = new Employees("Employee", "da Silva", "Tech Lead");
+const employee1 = new Employee("RNV", "Developer", "Frontend Developer");
+const employee2 = new Employee("Rato", "Marrato", "Backend Developer");
+const employee3 = new Employee("Employee", "da Silva", "Tech Lead");
 
-console.log(Employees.hirings);
+console.log(Employee.hirings);
 
 // Example 02 - Static Methods
-class Employees2 {
+class Employee2 {
     private static hirings = 0;
 
     constructor(
@@ -27,16 +27,16 @@ class Employees2 {
         private lastName: string,
         private title: string
     ) {
-        Employees2.hirings++;
+        Employee2.hirings++;
     }
 
     public static returnHirings() {
-        return Employees2.hirings;
+        return Employee2.hirings;
     }
 }
-const employee4 = new Employees2("RNV", "Developer", "Frontend Developer");
-const employee5 = new Employees2("Rato", "Marrato", "Backend Developer");
-console.log(Employees2.returnHirings());
+const employee4 = new Employee2("RNV", "Developer", "Frontend Developer");
+const employee5 = new Employee2("Rato", "Marrato", "Backend Developer");
+console.log(Employee2.returnHirings());
 
 // Example 03 - Static Properties
 type Breed = "Spitz" | "Buldog" | "Pug" | "Yorkshire" | "Poodle";
