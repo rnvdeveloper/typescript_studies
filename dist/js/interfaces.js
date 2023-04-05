@@ -14,3 +14,64 @@ function sumNumbers(nums) {
     return nums.n1 + nums.n2;
 }
 console.log(sumNumbers({ n1: 1, n2: 2 }));
+const showName = (person) => {
+    return `
+  Name: ${person.firstName}
+  Lastname: ${person.lastName}
+  Age: ${person.age}`;
+};
+const rnv = {
+    firstName: "Rnv",
+    lastName: "Developer",
+    age: 41,
+};
+console.log(showName(rnv));
+const showBookData = (book) => {
+    return `
+  Title: ${book1.title}
+  Author: ${book1.author}`;
+};
+const book1 = {
+    title: "Clean Code",
+    author: "Robert C. Martin",
+};
+console.log(showBookData(book1));
+const car = {
+    model: "Palião",
+    color: "Red",
+    year: 2002,
+};
+console.log(car);
+class Cat {
+    constructor(name, age, isAlive) {
+        this.name = name;
+        this.age = age;
+        this.isAlive = isAlive;
+    }
+    eat(foodType) {
+        return `The cat ${this.name} only eats ${foodType}.`;
+    }
+}
+const cat = new Cat("Rato", 41, true);
+console.log(cat);
+console.log(cat.eat("pizza"));
+const dog = {
+    name: "Dog",
+    age: 6,
+    animalSize: "small",
+    breed: "Chiuaua",
+};
+console.log(dog);
+const animalDog = {
+    name: "Doguíneo",
+    size: "small",
+    paws: 4,
+};
+console.log(animalDog);
+const developer = {
+    id: "ts programmer",
+    name: "Rnv",
+    wage: '20k',
+    programmingLanguage: "typescript"
+};
+console.log(developer);
