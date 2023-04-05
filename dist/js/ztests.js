@@ -17,8 +17,4 @@ function B() {
     console.log("called B");
     return true;
 }
-console.log(A() && B());
-const reverseStr1 = (str) => console.log(Array.from(str).reverse().join(''));
-reverseStr1("Boost the world together!");
-const reverseStr2 = (str) => console.log(str.split('').reverse().join(''));
-reverseStr2("Boost the world together!");
+console.log(A() && B()); // If A is true it will return A and call B, if A is false it will only return A
