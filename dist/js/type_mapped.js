@@ -1,20 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const userMapped = {
-    name: 'Rnv Developer',
-    address: 'Development Street, 1'
+    name: "Rnv Developer",
+    address: "Development Street, 1",
 };
 console.log(userMapped);
-const book1 = {
-    author: "A Author",
-    title: 'A title',
-    price: 20.00
+const userMethods2 = {
+    getName: () => "Rnv",
+    getEmail: () => "email@email",
+    getAddress: () => "Street 01",
+    getDocument: () => "Street 01",
+    getCellphone: () => "Street 01",
 };
-const book2 = {
-    author: "A Author",
-    title: 'A title',
-    pages: 200,
-    price: 20.00
-};
-console.log(book1);
-console.log(book2);
+console.log(userMethods2);
