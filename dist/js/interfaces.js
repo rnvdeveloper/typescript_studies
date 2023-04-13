@@ -71,7 +71,20 @@ console.log(animalDog);
 const developer = {
     id: "ts programmer",
     name: "Rnv",
-    wage: '20k',
-    programmingLanguage: "typescript"
+    wage: "20k",
+    programmingLanguage: "typescript",
 };
 console.log(developer);
+const book2 = {
+    author: "A Author",
+    title: "A title",
+    price: 20.0,
+};
+const book3 = {
+    author: "A Author",
+    title: "A title",
+    pages: 200,
+    price: 20.0,
+};
+console.log(book2);
+console.log(book3);

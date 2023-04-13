@@ -181,7 +181,8 @@ interface IEmployee {
     wage: number; // The uion type can be defined here instead of using Omit at the extended interface for the example below
 }
 
-interface IDeveloper extends Omit<IEmployee, "id" | 'wage'> { // Using Omit with union allowing changes to one or more property type, but changes are not mandatory.
+interface IDeveloper extends Omit<IEmployee, "id" | "wage"> {
+    // Using Omit with union allowing changes to one or more property type, but changes are not mandatory.
     id: string;
     wage: string;
     programmingLanguage: string;
@@ -190,7 +191,34 @@ interface IDeveloper extends Omit<IEmployee, "id" | 'wage'> { // Using Omit with
 const developer: IDeveloper = {
     id: "ts programmer",
     name: "Rnv",
-    wage: '20k',
-    programmingLanguage: "typescript"
+    wage: "20k",
+    programmingLanguage: "typescript",
 };
 console.log(developer);
+
+// Example 09
+interface IBook2 {
+    author: string;
+    title: string;
+    pages: number;
+    price: number;
+}
+
+type Article = Omit<IBook2, "pages">;
+type BookModel = Readonly<IBook2>;
+
+const book2: Article = {
+    author: "A Author",
+    title: "A title",
+    price: 20.0,
+};
+
+const book3: BookModel = {
+    author: "A Author",
+    title: "A title",
+    pages: 200,
+    price: 20.0,
+};
+
+console.log(book2);
+console.log(book3);
